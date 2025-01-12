@@ -70,7 +70,32 @@
 </header>
 
 <div class="app p-8">
-    <ul role="list" class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8">
+    <div>
+        <select>
+            <option>বিভাগ নির্বাচন করুন</option>
+            <option>ঢাকা</option>
+            <option>চট্টগ্রাম</option>
+        </select>
+        <select>
+            <option>জেলা</option>
+            <option>ঢাকা</option>
+            <option>টাঙ্গাইল</option>
+            <option>গাজীপুর</option>
+        </select>
+        <select>
+            <option>উপজেলা নির্বাচন</option>
+            <option>ব্রাহ্মণবাড়িয়া</option>
+            <option>টাঙ্গাইল</option>
+            <option>গাজীপুর</option>
+        </select>
+        <select>
+            <option>ইউনিয়ন নির্বাচন</option>
+            <option>ব্রাহ্মণবাড়িয়া</option>
+            <option>টাঙ্গাইল</option>
+            <option>গাজীপুর</option>
+        </select>
+    </div>
+    <ul role="list" class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8 col-start-3">
         <li class="overflow-hidden rounded-xl border border-gray-200">
             <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-green-300 p-6">
                 <svg class="size-5 text-green-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
@@ -332,6 +357,35 @@
                     <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
                 </li>
             </ul>
+            <nav class="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
+                <div class="-mt-px flex w-0 flex-1">
+                    <a href="#" class="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                        <svg class="mr-3 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
+                        </svg>
+                        Previous
+                    </a>
+                </div>
+                <div class="hidden md:-mt-px md:flex">
+                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">1</a>
+                    <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+                    <a href="#" class="inline-flex items-center border-t-2 border-indigo-500 px-4 pt-4 text-sm font-medium text-indigo-600" aria-current="page">2</a>
+                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">3</a>
+                    <span class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">...</span>
+                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">8</a>
+                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">9</a>
+                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">10</a>
+                </div>
+                <div class="-mt-px flex w-0 flex-1 justify-end">
+                    <a href="#" class="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                        Next
+                        <svg class="ml-3 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+
 
         </li>
     </ul>
