@@ -2,24 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>Astha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
 <header class="bg-white">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <a href="#" class="-m-1.5 p-1.5">
+        <div class="flex gap-r-3">
+        <a href="#" class="-m-1.5 p-1.5 border-r-2">
             <span class="sr-only">Your Company</span>
             <img class="h-16 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_Seal_of_Bangladesh.svg/220px-Government_Seal_of_Bangladesh.svg.png" alt="">
         </a>
         <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-16 w-auto" src="images/astha.jpeg" alt="">
+            <img class="h-16 w-auto" src="images/asthaLogo.png" alt="">
         </a>
-        <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-16 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Department_of_Information_and_Communication_Technology_%28DoICT%29.svg/150px-Department_of_Information_and_Communication_Technology_%28DoICT%29.svg.png" alt="">
-        </a>
+        </div>
         <div class="flex lg:hidden">
             <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Open main menu</span>
@@ -78,10 +77,13 @@
             </svg>
             <div class="text-sm/6 font-medium text-gray-900">সাধারন তথ্য নোটিশ</div>
             <div class="relative ml-auto">
+                <a class="font-light -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" href="single.html">
+                    সকল নোটিশ
+                </a>
             </div>
         </div>
         <ul role="list" class="divide-y divide-white/5 p-6">
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -106,7 +108,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -131,7 +133,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -156,7 +158,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -181,7 +183,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -206,7 +208,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -231,7 +233,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -256,7 +258,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -281,7 +283,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -306,7 +308,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
@@ -340,9 +342,14 @@
                 <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"></path>
             </svg>
             <div class="text-sm/6 font-medium text-gray-900">গুজব নোটিশ </div>
+            <div class="relative ml-auto">
+                <a class="font-light -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" href="single.html">
+                    সকল নোটিশ
+                </a>
+            </div>
         </div>
         <ul role="list" class="divide-y divide-white/5 p-6">
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -367,7 +374,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -392,7 +399,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -417,7 +424,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -442,7 +449,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -467,7 +474,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -492,7 +499,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -517,7 +524,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -542,7 +549,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -567,7 +574,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-yellow-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-yellow-400">
@@ -600,9 +607,14 @@
                 <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z" clip-rule="evenodd"></path>
             </svg>
             <div class="text-sm/6 font-medium text-gray-900">প্রতারণা নোটিশ</div>
+            <div class="relative ml-auto">
+                <a class="font-light -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" href="single.html">
+                    সকল নোটিশ
+                </a>
+            </div>
         </div>
         <ul role="list" class="divide-y divide-white/5 p-6">
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -627,7 +639,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -652,7 +664,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -677,7 +689,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -702,7 +714,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -727,7 +739,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -752,7 +764,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -777,7 +789,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -802,7 +814,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -827,7 +839,7 @@
                 </div>
                 <div class="flex-none rounded-full bg-red-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
             </li>
-            <li class="relative flex items-center space-x-4 py-4">
+            <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
                 <div class="min-w-0 flex-auto">
                     <div class="flex items-center gap-x-3">
                         <div class="flex-none rounded-full bg-green-400/10 p-1 text-red-400">
@@ -871,18 +883,60 @@
             <a href="#" class="-m-1.5 p-1.5">
                 <img class="h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_Seal_of_Bangladesh.svg/220px-Government_Seal_of_Bangladesh.svg.png" alt="">
             </a>
-            <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-10 w-auto" src="images/astha.jpeg" alt="">
-            </a>
-            <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Department_of_Information_and_Communication_Technology_%28DoICT%29.svg/150px-Department_of_Information_and_Communication_Technology_%28DoICT%29.svg.png" alt="">
-            </a>
+<!--            <a href="#" class="-m-1.5 p-1.5">-->
+<!--                <span class="sr-only">Your Company</span>-->
+<!--                <img class="h-10 w-auto" src="images/astha.jpeg" alt="">-->
+<!--            </a>-->
+<!--            <a href="#" class="-m-1.5 p-1.5">-->
+<!--                <span class="sr-only">Your Company</span>-->
+<!--                <img class="h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Department_of_Information_and_Communication_Technology_%28DoICT%29.svg/150px-Department_of_Information_and_Communication_Technology_%28DoICT%29.svg.png" alt="">-->
+<!--            </a>-->
         </div>
-        <p class="mt-10 text-center text-sm/6 text-gray-600">কারিগরি সহায়তায় - তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তর  </p>
+        <p class="mt-10 text-center text-sm/6 text-gray-600">কারিগরি সহায়তা ও বাস্তবায়নে - তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তর  </p>
     </div>
 </footer>
 
+
+<!-- Modal structure -->
+<div id="myModal" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <!-- Background backdrop -->
+    <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true" onclick="closeModal()"></div>
+
+    <!-- Modal content -->
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                <!-- Modal body -->
+                <div>
+                    <div class="mx-auto flex size-12 items-center justify-center rounded-full bg-green-100">
+                        <img class="h-16 w-auto" src="images/asthaLogo.png" alt="">
+                    </div>
+                    <div class="mt-3 text-center sm:mt-5">
+                        <h3 class="text-base font-semibold text-gray-900" id="modal-title">উপবৃত্তি প্রাপ্তি বিষয়ক/শিক্ষা মন্ত্রণালয়</h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                            <p class="text-sm text-gray-500">তারিখঃ ৬/১/২০২৫</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Close button -->
+                <div class="mt-5 sm:mt-6">
+                    <button type="button" onclick="closeModal()" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">বন্ধ করুন</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById('myModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').classList.add('hidden');
+    }
+
+</script>
 </body>
 </html>

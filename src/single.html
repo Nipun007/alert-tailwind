@@ -2,24 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>Astha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
 <header class="bg-white">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-16 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_Seal_of_Bangladesh.svg/220px-Government_Seal_of_Bangladesh.svg.png" alt="">
-        </a>
-        <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-16 w-auto" src="images/astha.jpeg" alt="">
-        </a>
-        <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-16 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Department_of_Information_and_Communication_Technology_%28DoICT%29.svg/150px-Department_of_Information_and_Communication_Technology_%28DoICT%29.svg.png" alt="">
-        </a>
+        <div class="flex gap-r-3">
+            <a href="#" class="-m-1.5 p-1.5 border-r-2">
+                <span class="sr-only">Your Company</span>
+                <img class="h-16 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_Seal_of_Bangladesh.svg/220px-Government_Seal_of_Bangladesh.svg.png" alt="">
+            </a>
+            <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img class="h-16 w-auto" src="images/asthaLogo.png" alt="">
+            </a>
+        </div>
         <div class="flex lg:hidden">
             <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Open main menu</span>
@@ -70,325 +69,327 @@
 </header>
 
 <div class="app p-8">
-    <div>
-        <select>
-            <option>বিভাগ নির্বাচন করুন</option>
-            <option>ঢাকা</option>
-            <option>চট্টগ্রাম</option>
-        </select>
-        <select>
-            <option>জেলা</option>
-            <option>ঢাকা</option>
-            <option>টাঙ্গাইল</option>
-            <option>গাজীপুর</option>
-        </select>
-        <select>
-            <option>উপজেলা নির্বাচন</option>
-            <option>ব্রাহ্মণবাড়িয়া</option>
-            <option>টাঙ্গাইল</option>
-            <option>গাজীপুর</option>
-        </select>
-        <select>
-            <option>ইউনিয়ন নির্বাচন</option>
-            <option>ব্রাহ্মণবাড়িয়া</option>
-            <option>টাঙ্গাইল</option>
-            <option>গাজীপুর</option>
-        </select>
+    <div class="overflow-hidden rounded-md bg-white shadow max-w-screen-md mx-auto">
+        <div class="py-4">
+            <select>
+                <option>বিভাগ নির্বাচন করুন</option>
+                <option>ঢাকা</option>
+                <option>চট্টগ্রাম</option>
+            </select>
+            <select>
+                <option>জেলা</option>
+                <option>ঢাকা</option>
+                <option>টাঙ্গাইল</option>
+                <option>গাজীপুর</option>
+            </select>
+            <select>
+                <option>উপজেলা নির্বাচন</option>
+                <option>ব্রাহ্মণবাড়িয়া</option>
+                <option>টাঙ্গাইল</option>
+                <option>গাজীপুর</option>
+            </select>
+            <select>
+                <option>ইউনিয়ন নির্বাচন</option>
+                <option>ব্রাহ্মণবাড়িয়া</option>
+                <option>টাঙ্গাইল</option>
+                <option>গাজীপুর</option>
+            </select>
+        </div>
+        <ul role="list" class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-1 xl:gap-x-8 col-start-3 pt-4">
+            <li class="overflow-hidden rounded-xl border border-gray-200">
+                <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-green-300 p-6">
+                    <svg class="size-5 text-green-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div class="text-sm/6 font-medium text-gray-900">সাধারন তথ্য নোটিশ</div>
+                    <div class="relative ml-auto">
+                    </div>
+                </div>
+                <ul role="list" class="divide-y divide-white/5 p-6">
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                    <li class="relative flex items-center space-x-4 py-4" onClick="openModal()">
+                        <div class="min-w-0 flex-auto">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                                    <div class="size-2 rounded-full bg-current"></div>
+                                </div>
+                                <h2 class="min-w-0 text-sm/6 font-semibold">
+                                    <a href="#" class="flex gap-x-2">
+                                        <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
+                                        <span class="text-gray-400">/</span>
+                                        <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
+                                <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                                <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
+                            </div>
+                        </div>
+                        <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
+                    </li>
+                </ul>
+                <nav class="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0 pb-4">
+                    <div class="-mt-px flex w-0 flex-1">
+                        <a href="#" class="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                            <svg class="mr-3 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
+                            </svg>
+                            Previous
+                        </a>
+                    </div>
+                    <div class="hidden md:-mt-px md:flex">
+                        <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">1</a>
+                        <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+                        <a href="#" class="inline-flex items-center border-t-2 border-indigo-500 px-4 pt-4 text-sm font-medium text-indigo-600" aria-current="page">2</a>
+                        <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">3</a>
+                        <span class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">...</span>
+                        <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">8</a>
+                        <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">9</a>
+                        <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">10</a>
+                    </div>
+                    <div class="-mt-px flex w-0 flex-1 justify-end">
+                        <a href="#" class="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                            Next
+                            <svg class="ml-3 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                <path fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+
+
+            </li>
+        </ul>
     </div>
-    <ul role="list" class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8 col-start-3">
-        <li class="overflow-hidden rounded-xl border border-gray-200">
-            <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-green-300 p-6">
-                <svg class="size-5 text-green-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"></path>
-                </svg>
-                <div class="text-sm/6 font-medium text-gray-900">সাধারন তথ্য নোটিশ</div>
-                <div class="relative ml-auto">
-                </div>
-            </div>
-            <ul role="list" class="divide-y divide-white/5 p-6">
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-                <li class="relative flex items-center space-x-4 py-4">
-                    <div class="min-w-0 flex-auto">
-                        <div class="flex items-center gap-x-3">
-                            <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
-                                <div class="size-2 rounded-full bg-current"></div>
-                            </div>
-                            <h2 class="min-w-0 text-sm/6 font-semibold">
-                                <a href="#" class="flex gap-x-2">
-                                    <span class="truncate">উপবৃত্তি প্রাপ্তি বিষয়ক</span>
-                                    <span class="text-gray-400">/</span>
-                                    <span class="whitespace-nowrap">শিক্ষা মন্ত্রণালয়</span>
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </h2>
-                        </div>
-                        <div class="mt-3 flex items-center gap-x-2.5 text-xs/5 text-black-400">
-                            <p class="truncate">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
-                            <svg viewBox="0 0 2 2" class="size-0.5 flex-none fill-gray-300">
-                                <circle cx="1" cy="1" r="1" />
-                            </svg>
-                            <p class="whitespace-nowrap">তারিখঃ ৬/১/২০২৫</p>
-                        </div>
-                    </div>
-                    <div class="flex-none rounded-full bg-green-300 px-2 py-1 text-xs font-medium text-black-400 ring-1 ring-inset ring-gray-400/20">বিস্তারিত</div>
-                </li>
-            </ul>
-            <nav class="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
-                <div class="-mt-px flex w-0 flex-1">
-                    <a href="#" class="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
-                        <svg class="mr-3 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                            <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
-                        </svg>
-                        Previous
-                    </a>
-                </div>
-                <div class="hidden md:-mt-px md:flex">
-                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">1</a>
-                    <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
-                    <a href="#" class="inline-flex items-center border-t-2 border-indigo-500 px-4 pt-4 text-sm font-medium text-indigo-600" aria-current="page">2</a>
-                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">3</a>
-                    <span class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">...</span>
-                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">8</a>
-                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">9</a>
-                    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">10</a>
-                </div>
-                <div class="-mt-px flex w-0 flex-1 justify-end">
-                    <a href="#" class="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
-                        Next
-                        <svg class="ml-3 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                            <path fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-
-
-        </li>
-    </ul>
 </div>
 
 
@@ -405,18 +406,60 @@
             <a href="#" class="-m-1.5 p-1.5">
                 <img class="h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_Seal_of_Bangladesh.svg/220px-Government_Seal_of_Bangladesh.svg.png" alt="">
             </a>
-            <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-10 w-auto" src="images/astha.jpeg" alt="">
-            </a>
-            <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Department_of_Information_and_Communication_Technology_%28DoICT%29.svg/150px-Department_of_Information_and_Communication_Technology_%28DoICT%29.svg.png" alt="">
-            </a>
+            <!--            <a href="#" class="-m-1.5 p-1.5">-->
+            <!--                <span class="sr-only">Your Company</span>-->
+            <!--                <img class="h-10 w-auto" src="images/astha.jpeg" alt="">-->
+            <!--            </a>-->
+            <!--            <a href="#" class="-m-1.5 p-1.5">-->
+            <!--                <span class="sr-only">Your Company</span>-->
+            <!--                <img class="h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Department_of_Information_and_Communication_Technology_%28DoICT%29.svg/150px-Department_of_Information_and_Communication_Technology_%28DoICT%29.svg.png" alt="">-->
+            <!--            </a>-->
         </div>
-        <p class="mt-10 text-center text-sm/6 text-gray-600">কারিগরি সহায়তায় - তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তর  </p>
+        <p class="mt-10 text-center text-sm/6 text-gray-600">কারিগরি সহায়তা ও বাস্তবায়নে - তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তর  </p>
     </div>
 </footer>
 
+
+<!-- Modal structure -->
+<div id="myModal" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <!-- Background backdrop -->
+    <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true" onclick="closeModal()"></div>
+
+    <!-- Modal content -->
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                <!-- Modal body -->
+                <div>
+                    <div class="mx-auto flex size-12 items-center justify-center rounded-full bg-green-100">
+                        <img class="h-16 w-auto" src="images/asthaLogo.png" alt="">
+                    </div>
+                    <div class="mt-3 text-center sm:mt-5">
+                        <h3 class="text-base font-semibold text-gray-900" id="modal-title">উপবৃত্তি প্রাপ্তি বিষয়ক/শিক্ষা মন্ত্রণালয়</h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500">২০২৪ সালের ৬ষ্ঠ থেকে ১২শ ও সমমান শ্রেণির উপবৃত্তি প্রাপ্তির অযোগ্য শিক্ষার্থীদের স্ট্যাটাস পরিবর্তনের মাধ্যমে নিষ্ক্রিয়করণ।</p>
+                            <p class="text-sm text-gray-500">তারিখঃ ৬/১/২০২৫</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Close button -->
+                <div class="mt-5 sm:mt-6">
+                    <button type="button" onclick="closeModal()" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">বন্ধ করুন</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById('myModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').classList.add('hidden');
+    }
+
+</script>
 </body>
 </html>
